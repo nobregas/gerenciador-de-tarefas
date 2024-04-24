@@ -1,9 +1,10 @@
 # Gerenciador de Tarefas API
 
 ## Indices
-- <a href="#-Funcionalidades"> Funcionalidades</a>
-- <a href="#-Tecnologias"> Tecnologias utilizadas</a>
-- <a href="#-Descricao"> Descricao</a>
+- <a href="#funcionalidades"> Funcionalidades</a>
+- <a href="#tecnologias-utilizadas"> Tecnologias utilizadas</a>
+- <a href="#descricao"> Descricao</a>
+- <a href="#extra"> Extra</a>
 
 ## Funcionalidades
 - [x] Criar tarefa
