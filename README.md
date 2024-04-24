@@ -9,6 +9,7 @@
 - [x] Criar tarefa
 - [x] Listar tarefas
 - [x] Obter tarefa por id
+- [x] Excluir tarefa por id
 
 ## Tecnologias Utilizadas
 

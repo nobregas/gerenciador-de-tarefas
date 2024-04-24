@@ -33,4 +33,10 @@ public class TarefaController {
         TarefaResponseDto tarefaDto = tarefaServicePort.obterTarefaPorId(id);
         return ResponseEntity.ok(tarefaDto);
     }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<?> deletarTarefaPorId(@PathVariable long id) {
+        tarefaServicePort.deletarTarefaPorId(id);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
 }

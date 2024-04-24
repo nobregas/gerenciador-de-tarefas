@@ -36,4 +36,9 @@ public class TarefaServiceImpl implements TarefaServicePort {
         Tarefa tarefa = tarefaRepository.obterPorId(id);
         return tarefa.toTarefaDto();
     }
+
+    @Override
+    public void deletarTarefaPorId(long id) {
+        tarefaRepository.deletar(id);
+    }
 }

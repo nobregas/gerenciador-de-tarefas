@@ -10,4 +10,6 @@ public interface TarefaServicePort {
 
     TarefaResponseDto criarTarefa(TarefaRequestDto tarefaDto);
     TarefaResponseDto obterTarefaPorId(long id);
+
+    void deletarTarefaPorId(long id);
 }
