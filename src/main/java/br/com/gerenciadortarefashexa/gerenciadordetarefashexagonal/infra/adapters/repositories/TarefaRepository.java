@@ -39,9 +39,23 @@ public class TarefaRepository implements TarefaRepositoryPort {
     }
 
     @Override
-    public void deletar(long id) {
+    public void deletarPorId(long id) {
         TarefaEntity tarefaEntity = springTarefaRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Tarefa não encontrada"));
         springTarefaRepository.delete(tarefaEntity);
+    }
+
+    @Override
+    public Tarefa atualizarPorId(long id, Tarefa tarefa) {
+        TarefaEntity tarefaEntity = springTarefaRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Tarefa não encontrada"));
+
+        if (tarefa.getTitulo() != null || !tarefa.getTitulo().isBlank()) {
+            tarefaEntity.setTitulo(tarefa.getTitulo());
+        }
+        if (tarefa.getDescricao() != null || !tarefa.getDescricao().isBlank()) {
+            tarefaEntity.setDescricao(tarefa.getDescricao());
+        }
+        return springTarefaRepository.save(tarefaEntity).toTarefa();
     }
 }

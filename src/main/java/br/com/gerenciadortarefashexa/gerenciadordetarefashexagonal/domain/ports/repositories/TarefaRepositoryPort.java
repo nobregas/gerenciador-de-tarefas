@@ -11,5 +11,7 @@ public interface TarefaRepositoryPort {
 
     Tarefa salvar(Tarefa tarefa);
 
-    void deletar(long id);
+    void deletarPorId(long id);
+
+    Tarefa atualizarPorId(long id, Tarefa tarefa);
 }

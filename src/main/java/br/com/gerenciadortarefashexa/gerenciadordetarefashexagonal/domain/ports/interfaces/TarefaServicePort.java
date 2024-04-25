@@ -9,7 +9,10 @@ public interface TarefaServicePort {
     List<TarefaResponseDto> buscarTarefas();
 
     TarefaResponseDto criarTarefa(TarefaRequestDto tarefaDto);
+
     TarefaResponseDto obterTarefaPorId(long id);
 
     void deletarTarefaPorId(long id);
+
+    TarefaResponseDto atualizarTarefaPorId(long id, TarefaRequestDto tarefaDto);
 }

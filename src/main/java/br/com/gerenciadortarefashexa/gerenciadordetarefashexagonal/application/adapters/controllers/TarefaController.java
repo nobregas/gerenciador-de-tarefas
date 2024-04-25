@@ -39,4 +39,12 @@ public class TarefaController {
         tarefaServicePort.deletarTarefaPorId(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<TarefaResponseDto> atualizarTarefaPorId(
+            @PathVariable long id, @RequestBody TarefaRequestDto tarefaDto
+    ) {
+        TarefaResponseDto tarefa = tarefaServicePort.atualizarTarefaPorId(id, tarefaDto);
+        return ResponseEntity.ok(tarefa);
+    }
 }
