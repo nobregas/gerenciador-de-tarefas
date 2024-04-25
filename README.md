@@ -1,10 +1,23 @@
 # Gerenciador de Tarefas API
 
 ## Indices
+- <a href="como-rodar"> Como Rodar</a>
 - <a href="#funcionalidades"> Funcionalidades</a>
 - <a href="#tecnologias-utilizadas"> Tecnologias utilizadas</a>
 - <a href="#descricao"> Descricao</a>
 - <a href="#extra"> Extra</a>
+
+## Como Rodar
+
+Para rodar a aplicação, clone o repositório com:
+
+``git clone https://github.com/nobregas/gerenciador-de-tarefas.git``
+
+Abra o projeto `gerenciador-de-tarefas` na sua IDE de prefencia.
+
+Depois abra o **application.properties** e configure sua senha e usuario do MySql e seu Schema.
+
+Pronto agora é só rodar o arquivo _GerenciadorDeTarefasHexagonalApplication.java_.
 
 ## Funcionalidades
 - [x] Criar tarefa
