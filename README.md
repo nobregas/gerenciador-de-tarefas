@@ -11,6 +11,7 @@
 - [x] Listar tarefas
 - [x] Obter tarefa por id
 - [x] Excluir tarefa por id
+- [x] Atualizar tarefa por id
 
 ## Tecnologias Utilizadas
 
